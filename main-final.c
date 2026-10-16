@@ -55,7 +55,7 @@ void adicionar_disco(int index_torre, int tamanho_disco, int index_disco) {
 
 void remover_disco(int index_torre, int tamanho_disco, int index_disco) {
     arr_torres[index_disco][index_torre][0] = '|';  
-    for(int i = 1; i<5; i++) {
+    for(int i = 1; i<n+2; i++) {
             arr_torres[index_disco][index_torre][i] = ' ';       
     }
 }
